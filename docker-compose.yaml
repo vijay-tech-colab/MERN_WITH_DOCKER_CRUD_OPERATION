@@ -1,0 +1,46 @@
+version: "3.9"
+
+services:
+  # 🔹 MongoDB Service
+  mongodb:
+    image: mongo:latest
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - mern
+
+  # 🔹 Backend (Express + Node.js)
+  backend:
+    build: ./backend
+    container_name: backend
+    ports:
+      - "5000:5000"
+    environment:
+      - MONGO_URI=mongodb://mongodb:27017/mydb
+    depends_on:
+      - mongodb
+    networks:
+      - mern
+
+  # 🔹 Frontend (React)
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    ports:
+      - "3000:5173"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+    depends_on:
+      - backend
+    networks:
+      - mern
+
+networks:
+  mern:
+    driver: bridge
+
+volumes:
+  mongo_data:
