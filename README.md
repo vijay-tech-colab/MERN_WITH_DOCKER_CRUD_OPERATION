@@ -1,25 +1,5 @@
 
-  <style>
-    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; line-height: 1.6; margin: 2rem; color: #111; }
-    h1, h2, h3 { line-height: 1.25; }
-    h1 { font-size: 2rem; }
-    h2 { font-size: 1.5rem; margin-top: 2rem; }
-    h3 { font-size: 1.25rem; margin-top: 1.25rem; }
-    code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
-    pre { background: #f6f8fa; padding: 1rem; overflow: auto; border-radius: 8px; border: 1px solid #e5e7eb; }
-    code { background: #f6f8fa; padding: .1rem .3rem; border-radius: 4px; }
-    .kbd { font-family: inherit; background: #f3f4f6; padding: .2rem .45rem; border: 1px solid #e5e7eb; border-bottom-width: 2px; border-radius: 6px; }
-    hr { border: none; border-top: 1px solid #e5e7eb; margin: 2rem 0; }
-    ul { padding-left: 1.25rem; }
-    .block { display: block; }
-    .muted { color: #6b7280; }
-    .note { background: #fffbeb; border: 1px solid #fde68a; padding: 1rem; border-radius: 8px; }
-    .success { background: #ecfdf5; border: 1px solid #a7f3d0; padding: 1rem; border-radius: 8px; }
-    a { color: #2563eb; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
-</head>
-<body>
+ 
   <h1>🚀 MERN App with Docker</h1>
   <p>This project is a <strong>MERN stack (MongoDB, Express, React, Node.js)</strong> application fully dockerized with Docker Compose.<br/>
   It runs three main services:</p>
